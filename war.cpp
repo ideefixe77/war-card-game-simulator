@@ -1,4 +1,3 @@
-//#include <windows.h>
 #include <stdio.h>
 #include <time.h>
 #include <list>
@@ -324,7 +323,6 @@ int main(int argc, char* argv[])
 		strategy.player_2 = (strategy_type)atoi(argv[4]);
 
 	srand((unsigned int)time(0));
-	//srand((unsigned int)GetTickCount());
 
 	while (games--)
 	{
@@ -334,7 +332,7 @@ int main(int argc, char* argv[])
 	}
 
 	printf("Draws=%d, A=%d, B=%d, max_rounds=%llu\n", won[0], won[1], won[2], max_rounds);
-	//getchar();
+	
 	return 0;
 }
 
